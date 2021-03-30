@@ -8,7 +8,10 @@ int main() { //c++ 프로그램의 실행 시작점
 	cin.getline(name, 11, '\n'); //cin 객체의 getline() 멤버함수 이용 시 공백 포함한 문자열 입력 받기 가능
 	cout << "반갑습니다." << name << "님" << endl; //endl : 줄바꿈 기능, \n과 같은 기능
 
-	int c1, c2, c3;
+	int c1, c2, c3; //과일의 가격을 입력받을 변수 선언
+	int n1, n2, n3; //과일의 개수를 입력받을 변수 선언 
+	int res; //총 금액을 입력받을 변수 선언
+	
 	cout << "apple의 가격은 얼마입니까?";
 	cin >> c1;
 	cout << "banana의 가격은 얼마입니까?";
@@ -16,7 +19,6 @@ int main() { //c++ 프로그램의 실행 시작점
 	cout << "orange의 가격은 얼마입니까?";
 	cin >> c3;
 
-	int n1, n2, n3;
 	cout << "apple은 몇 개 있습니까?";
 	cin >> n1;
 	cout << "banana는 몇 개 있습니까?";
@@ -24,7 +26,6 @@ int main() { //c++ 프로그램의 실행 시작점
 	cout << "orange는 몇 개 있습니까?";
 	cin >> n3;
 
-	int res;
 	res = (c1 * n1 + c2 * n2 + c3 * n3) - 500;
 	cout << "총" << res << "원 입니다.";
 }
